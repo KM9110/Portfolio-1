@@ -1,0 +1,287 @@
+@font-face {
+  font-family: Kenshington;
+  src: url("assets/fonts/kenshington/Kenshington.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(14, 0, 79);
+  color: #fff;
+}
+
+.left {
+  font-size: 1.5vw;
+  font-family: "road rage";
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+  background-color: rgb(98, 0, 255);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gilroy";
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 2.5vw;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all ease 0.2s;
+}
+
+
+.right ul i {
+  display: none;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  font-size: 2vw;
+}
+
+.firstsection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 6vw 0;
+}
+
+.firstsection > div {
+  width: 30%;
+}
+
+.leftsection {
+  width: 5vw;
+  font-size: 2.5vw;
+}
+
+.rightsection img {
+  width: 80%;
+  filter: grayscale(1);
+  transition: all ease 0.5s;
+}
+
+.rightsection img:hover {
+
+  scale: 1.5;
+  filter: grayscale(0);
+}
+
+
+main hr {
+  border: 0;
+  background-color: rgb(98, 0, 255);
+  height: 2px;
+  margin: 2vw 6vw;
+}
+
+.name {
+  color: rgb(187, 118, 251);
+}
+
+#element {
+  color: rgb(187, 118, 251);
+}
+
+.secondsection {
+  max-width: 80vw;
+  margin: auto;
+  height: 70vh;
+}
+
+.secondsection h1 {
+  font-size: 1.9rem;
+}
+
+.grey {
+  color: grey;
+}
+
+.horizontal-line {
+  background-color: white;
+  width: 80vw;
+  height: 2px;
+  margin: 5.5vw 0;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.vertical-line {
+  background-color: #fff;
+  width: 1px;
+  height: 100px;
+}
+
+.img-top {
+  position: relative;
+  width: 50px;
+  top: -47px;
+  left: -25px;
+}
+
+.vertical-title {
+  position: relative;
+  width: 150px;
+  font-size: 2vw;
+  top: 46px;
+}
+
+.vertical-desc {
+  position: relative;
+  top: 60px;
+  width: 130px;
+  font-size: 10px;
+}
+
+footer {
+  background-color: #120840;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 60px 100px;
+}
+.footer ul {
+  list-style: none;
+}
+
+.footer > div {
+  width: 200px;
+}
+
+footer .text-center {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.leftsection .button {
+  padding: 8vh 0.5vw;
+}
+
+.button .btn {
+  background-color: #6f50ff;
+  padding: 1vw;
+  font-size: 1vw;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  transition: all ease 0.3s;
+}
+
+.button .btn:hover {
+
+  background-color: #431afb;
+
+}
+
+@media (max-width: 650px) {
+
+  .right ul li{
+    display: none;
+
+  }
+
+  .right ul i{
+    display: block;
+
+  }
+
+
+  .firstsection {
+    width: 100%;     
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .firstsection div{
+    width: 100%;
+    /* background-color: #fff; */
+  }
+  .firstsection .leftsection{
+
+    font-size: 10vw;
+    padding: 5px;
+  }
+
+  .button .btn{
+    font-size: 4vw;
+    padding: 2vh 2vw;
+  }
+
+
+  .secondsection {
+    max-width: 70vw;
+    height: 80vh;
+  }
+
+  .horizontal-line {
+    background-color: white;
+    height: 120vw;
+    width: 2px;
+    margin: 5.5vw 0;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    flex-direction: column;
+  }
+  .vertical-line {
+    background-color: #fff;
+    width: 5vw;
+    height: 0.5vw;
+  }
+
+  .vertical-title {
+    top: -82px;
+    left: 40px;
+    font-size: 6vw;
+  }
+
+  .img-top {
+    position: relative;
+    width: 50px;
+    top: -23px;
+    left: -47px;
+  }
+
+  .vertical-desc {
+    top: -140px;
+    left: 180px;
+  }
+
+  .footer {
+    display: flex;
+    font-size: 3.5vw;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 6vh 6vw;
+  }
+
+  .left{
+
+    font-size: 5.5vw;
+  }
+
+}
